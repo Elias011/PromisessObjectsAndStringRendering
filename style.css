@@ -1,0 +1,76 @@
+
+/* Brother; all the items in the HTML is below
+   Just do whatever you want */   
+html {
+     box-sizing: border-box;
+     background: url(img/background.jpg) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	color: white;
+}
+
+.githubView{
+width: 70%;
+margin-left:10%;
+}
+
+#user{
+    
+  margin: 50px;
+	flex: none;
+	float: left;
+    
+}
+#userName{
+	text-align: center;
+	font-size: 50px;
+    font-family: 'Cabin Sketch', cursive;
+	text-shadow: 2px 2px;
+}
+
+#user p{
+   
+	border: 1px dash black;
+    font-size: 20px;
+	font-style: oblique;
+	border: 1px groove white;
+	box-shadow: 2px 2px 1px 1px;
+	font-family: 'Cabin Sketch', cursive;
+}
+
+#image{
+ width: 300px;
+ border: 1px groove white;
+ box-shadow: 2px 2px 1px 1px;	
+    
+}
+
+a { color: inherit; }
+
+
+ul{
+	float: right;
+	list-style: none;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: 'Sigmar One', cursive;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0.5;
+	transition: opacity 1s;
+	}
+ul:hover{
+	opacity: 1.0;
+    transition: opacity 1s;
+}
+li{
+	line-height: 70px;
+	color:white;
+	width: 300px;
+}
