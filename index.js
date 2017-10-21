@@ -50,14 +50,24 @@ GitHubUser.prototype.render = function () {
     // Here return a string, be fancy and use map && reduce
     let user = JSON.parse(this.user);
     //console.log(user);
+
 	let display = "<h3 id ='userName'>User Name</h3>";
 	display += "<div id='user'><img id='image' src=" + user.avatar_url + "<br> <p>Name:" + user.name + "<br>Created at : " + user.created_at + "<br>Last Login :" + user.updated_at + "<br> <a target='_blank' href=" + user.html_url + ">Go to GitHub Page </a></p>  </div>";
+
+	let display = "<h3>User</h3>";
+	display += "<div id='user'><p>Name : " + user.name + "<br>Created at : " + user.created_at + "<br>Last Login :" + user.updated_at + "<br> <a target='_blank' href=" + user.html_url + ">Go to GitHub Page : </a><br><img id='image' src='" + user.avatar_url + "' /></p>  </div>";
+
 	
 	let repo = JSON.parse(this.repos);
     console.log(repo);
     let repoItems = repo.reduce((a, b) =>  a + '<li><a target="_blank" href=' + b.html_url + '>' + b.name + '</a></li>', '');
+
 	display += "<ul>Repositories";
 	display += '<li>' + repoItems +	'</li>' + '</ul>';
+
+	display += "<h3>Repositories</h3>";
+	display += '<ul id = "repoList">' + repoItems +	'</ul>';
+
 	return display;
 }
 
